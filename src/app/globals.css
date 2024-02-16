@@ -2,26 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "PlusJakartaSans-ExtraBold";
+  src: url("../../public/fonts/PlusJakartaSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "PlusJakartaSans-Bold";
+  src: url("../../public/fonts/Ubuntu-Bold.ttf");
+}
+@font-face {
+  font-family: "PlusJakartaSans-Medium";
+  src: url("../../public/fonts/Ubuntu-Medium.ttf");
+}
+@font-face {
+  font-family: "PlusJakartaSans-Regular";
+  src: url("../../public/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "PlusJakartaSans-Light";
+  src: url("../../public/fonts/Ubuntu-Light.ttf");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+
+.grayImg {
+  filter: gray;
+  -webkit-filter: grayscale(1); 
+  filter: grayscale(1);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.custom-drop-shadow {
+  --tw-drop-shadow: drop-shadow(0 3px 3px rgb(0 0 0 / 0.5));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+
+.before-footer{
+  position: absolute;
+  left: calc(50% - -5px);
+  top: -15rem ;
+  width: 1300px;
+  border-radius: 10px;
+  background-color: #e45c16;
+  transform: translateX(-50%);
+}
+
+
+
