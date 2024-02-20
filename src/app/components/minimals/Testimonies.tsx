@@ -14,6 +14,10 @@ const items = TestimoniesElement.map((item) => (
 
 export default function Testimonies() {
 
+  let dots = Math.ceil(TestimoniesElement.length / 3)
+
+  console.log(dots)
+
   return (
     <section className=" bg-bleu py-16 space-y-8 flex flex-col justify-center">
       <div className=" space-y-4">
@@ -30,7 +34,9 @@ export default function Testimonies() {
       <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-xl px-10 flex gap-4">
       
         <div className="flex gap-4 flex-wrap justify-center">
-          <div className=" bg-white group hover:bg-orange flex flex-col  shadow-xl rounded-xl p-8 gap-4 w-[32%]">
+
+          
+          <div className=" bg-white group hover:bg-orange flex flex-col  shadow-xl rounded-xl p-8 gap-4 w-[32%] hover:scale-105 transition duration-200 cursor-pointer hover:cursor-pointer">
             <p className="group-hover:text-white text-bleu font-PMedium italic">
               « Notre club réunit des dirigeants passionnés qui souhaitent
               échanger autour des thématiques du numérique (mais pas que) et
@@ -102,6 +108,7 @@ export default function Testimonies() {
       </div>
 
       <div className="flex gap-3 justify-center">
+        
         <div className=" bg-white h-2 w-2 rounded-full cursor-pointer"></div>
         <div className=" h-2 bg-orange w-16 rounded-full cursor-pointer"></div>
         <div className=" bg-white h-2 w-2 rounded-full cursor-pointer"></div>
