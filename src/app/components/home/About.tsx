@@ -6,6 +6,8 @@ import { MdCurrencyExchange } from "react-icons/md";
 import { LiaBuromobelexperte } from "react-icons/lia";
 import Link from "next/link";
 
+
+
 export default function About() {
   return (
     <section className=" bg-grayHard py-16 space-y-8 flex flex-col justify-center">
@@ -20,7 +22,8 @@ export default function About() {
         </h2>
       </div>
 
-      <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:px-10 flex gap-5 flex-wrap justify-center ">
+      <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}' className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:px-10 flex gap-5  justify-center ">
+
         <div className=" bg-bleu w-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300">
           <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
             <FaNetworkWired className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />

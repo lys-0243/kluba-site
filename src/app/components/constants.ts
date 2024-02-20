@@ -121,5 +121,11 @@ export const TestimoniesElement = [
       name: "Beaudrick K.",
       company: "CEO Djodici"
     },
+    {
+      text: "« Notre club réunit des dirigeants passionnés qui souhaitent échanger autour des thématiques du numérique (mais pas que) et générer des leads qualifiés. Depuis notre création, nous travaillons aussi sur la cohésion du groupe en partageant sur les expériences de chacun et en organisant des activités hors du groupe (rendez-vous croisés, visites d’entreprise, ateliers…) »",
+      imgSrc: "/img/kristen.jpg",
+      name: "Sylvain Lys",
+      company: "LycGroup"
+    },
     
   ];

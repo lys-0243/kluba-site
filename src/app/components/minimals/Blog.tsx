@@ -11,7 +11,7 @@ export default function Blog() {
       </h2>
 
       <div className="grid grid-cols-3 justify-center items-center gap-7 px-12">
-        <div className="group hover:bg-orange flex flex-col w-full shadow-xl rounded-xl p-5 gap-4">
+        <div className="group hover:bg-orange flex flex-col w-full shadow-xl rounded-xl p-5 gap-4 hover:cursor-pointer">
           <Image
             src="/img/blog.png"
             alt="Footer Image"
@@ -37,7 +37,7 @@ export default function Blog() {
           </div>
         </div>
 
-        <div className="group hover:bg-orange flex flex-col w-full shadow-xl rounded-xl p-5 gap-4">
+        <div className="group hover:bg-orange flex flex-col w-full shadow-xl rounded-xl p-5 gap-4 hover:cursor-pointer">
           <Image
             src="/img/blog.png"
             alt="Footer Image"
@@ -63,7 +63,7 @@ export default function Blog() {
           </div>
         </div>
 
-        <div className="group hover:bg-orange flex flex-col w-full shadow-xl rounded-xl p-5 gap-4">
+        <div className="group hover:bg-orange flex flex-col w-full shadow-xl rounded-xl p-5 gap-4 hover:cursor-pointer">
           <Image
             src="/img/blog.png"
             alt="Footer Image"

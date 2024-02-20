@@ -2,39 +2,17 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { SocialsNetworks } from "../constants";
-import BeforeFooter from "../home/BeforeFooter";
+import BeforeFooter from "./BeforeFooter";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className=" relative mt-[17rem]">
-      <div className="before-footer flex items-center justify-between p-5">
-        <div className=" space-y-5 pl-10">
-          <h3 className=" font-PBold text-white text-4xl">
-            Club Kluba, la solution la <br /> plus performante <br /> pour
-            investir en startups.
-          </h3>
-          <Link
-            href="#"
-            className="text-orange px-6 py-3 bg-white uppercase font-PMedium tracking-wider text-sm rounded-2xl flex justify-center w-max"
-          >
-            DEVENIR MEMBRE
-          </Link>
-        </div>
-        <div>
-          <Image
-            src="/img/home/footer.png"
-            alt="Footer Image"
-            width={350}
-            height={350}
-            className=" rounded-lg"
-          />
-        </div>
-      </div>
-
-      <footer className=" bg-bleu pb-16 pt-60">
-        <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-xl flex items-start gap-20">
+    <>
+      <BeforeFooter />
+      <footer className="bg-bleu pb-16 pt-16 ">
+      {/* <footer className="pb-16 pt-16"> */}
+        <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-xl lg:max-w-screen-md  flex items-start gap-20">
           <div>
             <div>
               <Link href="/">
@@ -86,6 +64,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 }

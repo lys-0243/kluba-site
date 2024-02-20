@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <main>
       {/* <HeroSection />
-      <KlubaTime />
+      <KlubaTime />*/}
       <About />
-      <InvestDetails /> */}
+      <InvestDetails /> 
       <Testimonies />
       <Blog />
       <Partnairs />

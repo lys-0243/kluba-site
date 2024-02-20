@@ -87,8 +87,8 @@
   margin-top: "60px";
 }
 
-.swiper-pagination-bullet-active {
-  color: #fff;
+.alice-carousel__dots-item.__active {
+  color: #e45c16;
   background: #e45c16;
 }
 
