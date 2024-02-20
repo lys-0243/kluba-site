@@ -9,7 +9,7 @@ import TestimonyCard from "../Crads/Testimony";
 const handleDragStart = (e:any) => e.preventDefault();
 
 const items = TestimoniesElement.map((item) => (
-  <TestimonyCard text={item.text} imgSrc={item.imgSrc} name={item.name} company={item.company} item={item} />
+  <TestimonyCard text={item.text} key={item.name} imgSrc={item.imgSrc} name={item.name} company={item.company} item={item} />
 ))
 
 export default function Testimonies() {
@@ -37,7 +37,7 @@ export default function Testimonies() {
               générer des leads qualifiés. Depuis notre création, nous
               travaillons aussi sur la cohésion du groupe en partageant sur les
               expériences de chacun et en organisant des activités hors du
-              groupe (rendez-vous croisés, visites d’entreprise, ateliers…) »"
+              groupe (rendez-vous croisés, visites d&quot;entreprise, ateliers…) »"
             </p>
             <div className="flex items-center gap-4">
               <div className=" w-12 h-12 bg-[url('/img/kt.jpg')] rounded-full bg-cover"></div>
@@ -60,7 +60,7 @@ export default function Testimonies() {
               générer des leads qualifiés. Depuis notre création, nous
               travaillons aussi sur la cohésion du groupe en partageant sur les
               expériences de chacun et en organisant des activités hors du
-              groupe (rendez-vous croisés, visites d’entreprise, ateliers…) »"
+              groupe (rendez-vous croisés, visites d&quot;entreprise, ateliers…) »"
             </p>
             <div className="flex items-center gap-4">
               <div className=" w-12 h-12 bg-[url('/img/kristen.jpg')] rounded-full bg-cover"></div>
@@ -83,7 +83,7 @@ export default function Testimonies() {
               générer des leads qualifiés. Depuis notre création, nous
               travaillons aussi sur la cohésion du groupe en partageant sur les
               expériences de chacun et en organisant des activités hors du
-              groupe (rendez-vous croisés, visites d’entreprise, ateliers…) »"
+              groupe (rendez-vous croisés, visites d&quot;entreprise, ateliers…) »"
             </p>
             <div className="flex items-center gap-4">
               <div className=" w-12 h-12 bg-[url('/img/blog.png')] rounded-full bg-cover"></div>
