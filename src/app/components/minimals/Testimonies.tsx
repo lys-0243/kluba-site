@@ -3,7 +3,6 @@ import React from "react";
 
 import Link from "next/link";
 import Image from "next/image";
-import 'react-alice-carousel/lib/alice-carousel.css';
 import { TestimoniesElement } from "../constants";
 import TestimonyCard from "../Crads/Testimony";
 
