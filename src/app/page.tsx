@@ -10,8 +10,8 @@ import Testimonies from "./components/minimals/Testimonies";
 export default function Home() {
   return (
     <main>
-      {/* <HeroSection />
-      <KlubaTime />*/}
+      <HeroSection />
+      <KlubaTime />
       <About />
       <InvestDetails /> 
       <Testimonies />
