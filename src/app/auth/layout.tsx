@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import Footer from "@/components/minimals/Footer";
 
 
@@ -13,16 +13,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="fr">
-      <body className={""}>
+
+
+export default function AuthLayout({
+    children, // will be a page or nested layout
+  }: {
+    children: React.ReactNode
+  }) {
+    return (
+      <section className="bg-[url('/img/login.jpg')] bg-cover min-h-screen p-2 relative">
+   
         {children}
-      </body>
-    </html>
-  );
-}
+      </section>
+    )
+  }
