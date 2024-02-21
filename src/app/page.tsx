@@ -8,6 +8,7 @@ import Partnairs from "@/components/minimals/Partnairs";
 import Testimonies from "@/components/minimals/Testimonies";
 import Image from "next/image";
 
+
 export default function Home() {
   return (
     <main>

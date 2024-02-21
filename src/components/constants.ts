@@ -1,12 +1,14 @@
+import { appRoutes } from "./utils/routes";
+
 export const MenuLinks = [
     {
       name: "Accueil",
-      href: "#",
+      href: appRoutes.home,
       active:"home"
     },
     {
       name: "investir/Epargner",
-      href: "#",
+      href: appRoutes.investir,
       active:"invest"
     },
     {

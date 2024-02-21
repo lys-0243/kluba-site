@@ -12,13 +12,15 @@ export default function SignUp() {
     <div className="">
       <div className="flex items-center justify-end gap-10 mr-24  min-h-screen">
         <div className=" flex gap-5 flex-col">
-          <Image
-            src="/img/logos/kaapital-logo.png"
-            alt="Logo Kluba"
-            width={180}
-            height={102}
-            className=""
-          />
+          <Link href={appRoutes.home}>
+            <Image
+              src="/img/logos/kaapital-logo.png"
+              alt="Logo Kluba"
+              width={180}
+              height={102}
+              className=""
+            />
+          </Link>
           <h2 className=" text-3xl font-PBold">
             Mon espace <br /> Club d&apos;affaires
           </h2>

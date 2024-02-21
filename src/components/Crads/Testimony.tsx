@@ -14,8 +14,6 @@ export default function TestimonyCard({
   company: String;
   item: {};
 }) {
-  console.log(item);
-
   return (
     <div className=" bg-white group hover:bg-orange flex flex-col  shadow-xl rounded-xl p-8 gap-4 hover:cursor-text h-72 ">
       <p className=" group-hover:text-white text-bleu font-PMedium italic">
@@ -30,8 +28,12 @@ export default function TestimonyCard({
           className=" rounded-full"
         />
         <div>
-          <h4 className="group-hover:text-white font-PBold text-sm text-bleu">{name}</h4>
-          <p className="group-hover:text-white uppercase text-xs font-PMedium text-bleu">{company}</p>
+          <h4 className="group-hover:text-white font-PBold text-sm text-bleu">
+            {name}
+          </h4>
+          <p className="group-hover:text-white uppercase text-xs font-PMedium text-bleu">
+            {company}
+          </p>
         </div>
       </div>
     </div>
