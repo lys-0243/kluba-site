@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaNetworkWired } from "react-icons/fa";
 import { IoBusinessOutline } from "react-icons/io5";
@@ -6,7 +7,10 @@ import { MdCurrencyExchange } from "react-icons/md";
 import { LiaBuromobelexperte } from "react-icons/lia";
 import Link from "next/link";
 
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper/modules";
 
 export default function About() {
   return (
@@ -22,77 +26,98 @@ export default function About() {
         </h2>
       </div>
 
-      <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:px-10 flex gap-5 flex-wrap justify-center ">
+      <div className=" ml-[20%]">
+        <Swiper
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          slidesPerView={4}
+          spaceBetween={16}
+          modules={[Autoplay]}
+          className=" h-[18%]"
+        >
+          <SwiperSlide>
+            <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
+              <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
+                <FaNetworkWired className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
+              </div>
+              <div className="text-white space-y-4">
+                <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
+                  01
+                </p>
+                <p className=" font-PMedium text-xl">
+                  Développer son réseau professionnel et son chiffre
+                  d&apos;affaires
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
 
-        <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
-          <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
-            <FaNetworkWired className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
-          </div>
-          <div className="text-white space-y-4">
-            <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
-              01
-            </p>
-            <p className=" font-PMedium text-xl">
-              Développer son réseau professionnel et son chiffre d&apos;affaires
-            </p>
-          </div>
-        </div>
+          <SwiperSlide>
+            <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
+              <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
+                <IoBusinessOutline className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
+              </div>
+              <div className="text-white space-y-4">
+                <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
+                  02
+                </p>
+                <p className=" font-PMedium text-xl">
+                  Faire connaître son activité
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
 
-        <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
-          <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
-            <IoBusinessOutline className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
-          </div>
-          <div className="text-white space-y-4">
-            <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
-              02
-            </p>
-            <p className=" font-PMedium text-xl">
-              Faire connaître son activité
-            </p>
-          </div>
-        </div>
+          <SwiperSlide>
+            <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
+              <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
+                <HiOutlineUserGroup className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
+              </div>
+              <div className="text-white space-y-4">
+                <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
+                  03
+                </p>
+                <p className=" font-PMedium text-xl">
+                  Être recommandé par ses membres
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
 
-        <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
-          <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
-            <HiOutlineUserGroup className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
-          </div>
-          <div className="text-white space-y-4">
-            <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
-              03
-            </p>
-            <p className=" font-PMedium text-xl">
-              Être recommandé par ses membres
-            </p>
-          </div>
-        </div>
+          <SwiperSlide>
+            <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
+              <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
+                <MdCurrencyExchange className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
+              </div>
+              <div className="text-white space-y-4">
+                <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
+                  04
+                </p>
+                <p className=" font-PMedium text-xl">
+                  Échanger des opportunités d&apos;affaires qualifiées
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
 
-        <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
-          <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
-            <MdCurrencyExchange className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
-          </div>
-          <div className="text-white space-y-4">
-            <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
-              04
-            </p>
-            <p className=" font-PMedium text-xl">
-              Échanger des opportunités d&apos;affaires qualifiées
-            </p>
-          </div>
-        </div>
-
-        <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
-          <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
-            <LiaBuromobelexperte className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
-          </div>
-          <div className="text-white space-y-4">
-            <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
-              05
-            </p>
-            <p className=" font-PMedium text-xl">
-              Capitaliser sur le retour d’expérience des membres du club
-            </p>
-          </div>
-        </div>
+          <SwiperSlide>
+            <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
+              <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
+                <LiaBuromobelexperte className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
+              </div>
+              <div className="text-white space-y-4">
+                <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
+                  05
+                </p>
+                <p className=" font-PMedium text-xl">
+                  Capitaliser sur le retour d’expérience des membres du club
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
 
       <div className="flex flex-col justify-center items-center">
