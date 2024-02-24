@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
-import { InvestItems } from "../constants";
+import { FaCheckCircle } from "react-icons/fa";
 
 export default function InvestDetails() {
   return (
-    <section className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:px-10 py-12">
+    <section className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl lg:px-10 py-12">
       <div className="grid grid-cols-2 gap-4">
         <div className="flex flex-col gap-3">
           <h2 className=" text-bleu text-4xl font-black font-PBold">
@@ -19,7 +19,7 @@ export default function InvestDetails() {
           </p>
         </div>
 
-        <div className="bg-[url('/img/home/invest1.png')] rounded-xl flex relative p-6 h-56 w-full">
+        <div className="bg-[url('/img/home/invest1.png')] bg-cover rounded-xl flex relative p-6 h-56 w-full">
           <div className="flex absolute bottom-4 justify-between">
             <h3 className=" text-white font-PBold w-1/2 custom-drop-shadow">
               Acheter votre bot de trading automatique
@@ -33,7 +33,7 @@ export default function InvestDetails() {
           </div>
         </div>
 
-        <div className="bg-[url('/img/home/invest2.png')] rounded-xl flex relative p-6 h-56">
+        <div className="bg-[url('/img/home/invest2.png')] bg-cover rounded-xl flex relative p-6 h-56">
           <div className="flex absolute bottom-4 justify-between">
             <h3 className=" text-white font-PBold w-1/2 custom-drop-shadow">
               Rejoignez la chaîne de fast-food KWI
@@ -47,7 +47,7 @@ export default function InvestDetails() {
           </div>
         </div>
 
-        <div className="bg-[url('/img/home/invest3.png')] rounded-xl flex relative p-6 h-56">
+        <div className="bg-[url('/img/home/invest3.png')] bg-cover rounded-xl flex relative p-6 h-56">
           <div className="flex absolute bottom-4 justify-between">
             <h3 className=" text-white font-PBold w-1/2 custom-drop-shadow">
               Une vidéo corporate offerte à 150$
@@ -61,7 +61,7 @@ export default function InvestDetails() {
           </div>
         </div>
 
-        <div className="bg-[url('/img/home/invest4.png')] rounded-xl flex relative p-6 h-56">
+        <div className="bg-[url('/img/home/invest4.png')] bg-cover rounded-xl flex relative p-6 h-56">
           <div className="flex absolute bottom-4 justify-between">
             <h3 className=" text-white font-PBold w-1/2 custom-drop-shadow">
               Acheter vos Token Pay
@@ -75,7 +75,7 @@ export default function InvestDetails() {
           </div>
         </div>
 
-        <div className="bg-[url('/img/home/invest5.png')] rounded-xl flex relative p-6 h-56">
+        <div className="bg-[url('/img/home/invest5.png')] bg-cover rounded-xl flex relative p-6 h-56">
           <div className="flex absolute bottom-4 justify-between">
             <h3 className=" text-white font-PBold w-1/2 custom-drop-shadow">
               Vous cherchez à lever des fonds

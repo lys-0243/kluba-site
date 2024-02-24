@@ -14,7 +14,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 export default function About() {
   return (
-    <section className=" bg-grayHard py-16 space-y-8 flex flex-col justify-center">
+    <section className=" bg-grayHard py-16 space-y-8 flex flex-col justify-center ">
       <div className=" space-y-4">
         <div className="flex justify-center items-center gap-4 uppercase font-PBold tracking-wider text-lg text-bleu">
           <div className=" bg-orange h-[3px] w-[5%]"></div>

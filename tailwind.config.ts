@@ -8,11 +8,11 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      sm: '359px',
-      md: '640px',
-      lg: '1024px',
-      xl: '1280px',
-      "2xl": '1536px'
+      'sm': {'max':'480px'},
+      'md': {'min':'481px','max':'768px'},
+      'lg': {'min':'768px','max':'1023px'},
+      'xl': {'min':'1024px','max':'1280px'},
+      "2xl": '1281px'
     },
 
     colors: {

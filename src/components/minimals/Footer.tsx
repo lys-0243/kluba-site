@@ -11,8 +11,8 @@ export default function Footer() {
     <>
       <BeforeFooter />
       <footer className="bg-bleu pb-16 pt-16 ">
-      {/* <footer className="pb-16 pt-16"> */}
-        <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-xl lg:max-w-screen-md  flex items-start gap-20">
+        {/* <footer className="pb-16 pt-16"> */}
+        <div className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl lg:max-w-screen-md  flex items-start gap-20">
           <div>
             <div>
               <Link href="/">

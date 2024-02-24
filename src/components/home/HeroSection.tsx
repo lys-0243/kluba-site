@@ -9,7 +9,8 @@ export default function HeroSection() {
   return (
     <section className="bg-[url('/img/home/bg-home.png')] bg-cover min-h-screen p-2 relative">
         <MenuItems />
-      <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-xl">
+      <div className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl lg:max-w-screen-2xl">
+
         <div className="flex items-center ">
           <div className=" w-1/2 text-bleu flex flex-col gap-10 pt-[12%]">
             <h1 className=" font-PExtra text-4xl">

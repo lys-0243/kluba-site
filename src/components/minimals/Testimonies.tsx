@@ -36,7 +36,7 @@ export default function Testimonies() {
         }}
         modules={[Autoplay, Pagination]}
         // modules={[Pagination]}
-        className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-xl px-10"
+        className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl px-10"
       >
         <SwiperSlide className=" bg-white group hover:bg-orange flex flex-col  shadow-xl rounded-xl p-8 gap-4 hover:scale-95 transition duration-200 cursor-pointer hover:cursor-text">
           <p className="group-hover:text-white text-bleu font-PMedium italic">

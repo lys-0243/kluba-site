@@ -8,7 +8,7 @@ export default function MenuItems() {
   return (
     <div className="shadow-lg">
 
-    <header className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-xl shadow-lg">
+    <header className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl lg:max-w-screen-2xl shadow-lg">
       <nav className=" flex justify-between items-center ">
         <div>
           <Link href="/">
