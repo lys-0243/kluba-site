@@ -26,7 +26,7 @@ export default function About() {
         </h2>
       </div>
 
-      <div className=" ml-[20%]">
+      <div className=" ml-[20%] hidden lg:flex">
         <Swiper
           autoplay={{
             delay: 3500,
@@ -120,8 +120,102 @@ export default function About() {
         </Swiper>
       </div>
 
+      <div className=" ml-[10%] sm:hidden">
+        <Swiper
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          slidesPerView={1}
+          spaceBetween={16}
+          modules={[Autoplay]}
+          className=" h-[18%] flex justify-center items-center gap-4"
+        >
+          <SwiperSlide className="flex flex-row">
+            <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange">
+              <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
+                <FaNetworkWired className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
+              </div>
+              <div className="text-white space-y-4">
+                <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
+                  01
+                </p>
+                <p className=" font-PMedium text-xl">
+                  Développer son réseau professionnel et son chiffre
+                  d&apos;affaires
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
+              <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
+                <IoBusinessOutline className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
+              </div>
+              <div className="text-white space-y-4">
+                <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
+                  02
+                </p>
+                <p className=" font-PMedium text-xl">
+                  Faire connaître son activité
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
+              <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
+                <HiOutlineUserGroup className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
+              </div>
+              <div className="text-white space-y-4">
+                <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
+                  03
+                </p>
+                <p className=" font-PMedium text-xl">
+                  Être recommandé par ses membres
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
+              <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
+                <MdCurrencyExchange className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
+              </div>
+              <div className="text-white space-y-4">
+                <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
+                  04
+                </p>
+                <p className=" font-PMedium text-xl">
+                  Échanger des opportunités d&apos;affaires qualifiées
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className=" bg-bleu w-[18rem] h-[18rem] rounded-2xl flex flex-col py-8 px-8 gap-4 group hover:bg-orange transition duration-300 hover:scale-110 hover:cursor-pointer">
+              <div className="bg-orange flex justify-center items-center w-1/3 h-20 rounded-md group-hover:bg-white transition duration-300">
+                <LiaBuromobelexperte className=" text-white w-10 h-10 group-hover:text-bleu transition duration-300" />
+              </div>
+              <div className="text-white space-y-4">
+                <p className=" font-PRegular text-xs group-hover:text-bleu group-hover:font-PMedium transition duration-300">
+                  05
+                </p>
+                <p className=" font-PMedium text-xl">
+                  Capitaliser sur le retour d’expérience des membres du club
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
       <div className="flex flex-col justify-center items-center">
-        <p className=" text-bleu font-PMedium text-lg mb-4">
+        <p className=" text-bleu font-PMedium text-lg mb-4 text-center">
           Le tout, dans une ambiance conviviale, chaleureuse et bienveillante.
         </p>
 

@@ -16,12 +16,12 @@ export default function InvestirEpargner() {
 
       <main className=" ">
         <div className=" h-[25rem]  bg-[url('/img/invest0.jpg')] bg-cover flex  flex-col justify-center">
-          <div className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl text-left ">
-            <h2 className=" text-[5rem] font-PBold text-white leading-none">
+          <div className="text-white mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl text-left ">
+            <h2 className=" text-[5rem] font-PBold leading-none">
               Investissez <br />
               Epargnez
             </h2>
-            <p className=" text-bleu font-PMedium w-1/2 mt-6">
+            <p className="font-PMedium w-1/2 mt-6">
               Rejoignez le club en choisissant un produit de fast-food KWI{" "}
               <br /> <br />
               <span>

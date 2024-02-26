@@ -7,12 +7,12 @@ export const MenuLinks = [
       active:"home"
     },
     {
-      name: "investir/Epargner",
+      name: "Investir/Epargner",
       href: appRoutes.investir,
       active:"invest"
     },
     {
-      name: "blog",
+      name: "Blog",
       href: "#",
       active:"blog"
     },

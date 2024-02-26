@@ -7,14 +7,6 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    screens: {
-      'sm': {'max':'480px'},
-      'md': {'min':'481px','max':'768px'},
-      'lg': {'min':'768px','max':'1023px'},
-      'xl': {'min':'1024px','max':'1280px'},
-      "2xl": '1281px'
-    },
-
     colors: {
       transparent: "transparent",
       primary: "#c71a0c",
@@ -75,7 +67,8 @@ const config: Config = {
     animation: ["motion-safe"]
   },
   plugins: [
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    
   ],
 }
 export default config
