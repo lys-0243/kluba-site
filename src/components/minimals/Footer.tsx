@@ -11,7 +11,7 @@ export default function Footer() {
     <>
       <BeforeFooter />
       <footer className="bg-bleu pb-16 pt-16 ">
-        <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 flex items-start gap-20">
+        <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 flex px-8 gap-12 justify-start flex-col md:flex md:flex-row">
           <div>
             <div>
               <Link href="/">
@@ -41,24 +41,28 @@ export default function Footer() {
             </p>
           </div>
 
-          <div>
-            <h3 className=" text-orange font-PBold text-lg">Vous informer</h3>
-            <div className=" flex flex-col gap-3 font-PRegular text-white opacity-65">
-              <Link href="#">Accueil</Link>
-              <Link href="#">Temoignages</Link>
-              <Link href="#">Contact</Link>
-              <Link href="#">Mentions légales</Link>
-              <Link href="#">Politique de confidentialité</Link>
+          <div className="flex flex-col md:flex md:flex-row gap-10 items-start justify-start">
+            <div>
+              <h3 className=" text-orange font-PBold text-lg">Vous informer</h3>
+              <div className=" flex flex-col gap-3 font-PRegular text-white opacity-65">
+                <Link href="#">Accueil</Link>
+                <Link href="#">Temoignages</Link>
+                <Link href="#">Contact</Link>
+                <Link href="#">Mentions légales</Link>
+                <Link href="#">Politique de confidentialité</Link>
+              </div>
             </div>
-          </div>
 
-          <div>
-            <h3 className=" text-orange font-PBold text-lg">Club d’affires</h3>
-            <div className=" flex flex-col gap-3 font-PRegular text-white opacity-65">
-              <Link href="#">Créer un Club</Link>
-              <Link href="#">Les Clubs</Link>
-              <Link href="#">Connexion</Link>
-              <Link href="#">Conditions Générales d’Utilisation</Link>
+            <div>
+              <h3 className=" text-orange font-PBold text-lg">
+                Club d’affires
+              </h3>
+              <div className=" flex flex-col gap-3 font-PRegular text-white opacity-65">
+                <Link href="#">Créer un Club</Link>
+                <Link href="#">Les Clubs</Link>
+                <Link href="#">Connexion</Link>
+                <Link href="#">Conditions Générales d’Utilisation</Link>
+              </div>
             </div>
           </div>
         </div>

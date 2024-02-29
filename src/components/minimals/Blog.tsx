@@ -10,7 +10,8 @@ export default function Blog() {
         Blog
       </h2>
 
-      <div className="grid grid-cols-3 justify-center items-center gap-7 px-12">
+      {/* <div className="grid grid-cols-3 justify-center items-center gap-7 px-12"> */}
+      <div className="flex flex-col mx-4 gap-7 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 justify-center items-center">
         <div className="group hover:bg-orange flex flex-col w-full shadow-xl rounded-xl p-5 gap-4 hover:cursor-pointer">
           <Image
             src="/img/blog.png"
