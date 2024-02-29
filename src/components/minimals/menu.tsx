@@ -11,7 +11,7 @@ import { Fragment } from "react";
 export default function MenuItems() {
   return (
     <div className="shadow-lg">
-      <header className="hidden sm:mx-auto 2xl:max-w-screen-xl xl:max-w-screen-xl lg:max-w-screen-xl sm:shadow-lg py-4">
+      <header className="hidden lg:grid mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 md:px-10 sm:shadow-lg py-4">
         <nav className=" flex justify-between items-center ">
           <div>
             <Link href="/">
@@ -47,7 +47,7 @@ export default function MenuItems() {
         </nav>
       </header>
 
-      <div className="sm:hidden flex justify-between items-center px-5 bg-bleu sticky top-0 z-50">
+      <div className="flex justify-between items-center px-5 md:px-8 py-2 lg:hidden bg-bleu sticky top-0 z-50">
         <div>
           <Link href="/">
             <Image

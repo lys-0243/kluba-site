@@ -9,7 +9,7 @@ export default function KlubaTime() {
   const screeWidth = screenW();
 
   return (
-    <section className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl lg:px-10 text-center my-12">
+    <section className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 text-center my-12">
       <h2 className={"text-bleu font-PBold font-extrabold text-4xl pb-4"}>
         Club Kluba en seulement 6 mois, c&apos;est déjà :
       </h2>

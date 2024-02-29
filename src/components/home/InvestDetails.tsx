@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 export default function InvestDetails() {
   return (
-    <section className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-xl lg:px-10 py-12">
+    <section className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 py-12">
       <div className="md:grid md:grid-cols-2 md:gap-4 mx-4 space-y-3">
         <div className="flex flex-col gap-3">
           <h2 className=" text-bleu text-4xl font-black font-PBold">

@@ -7,7 +7,7 @@ import { appRoutes } from "../utils/routes";
 export default function MenuBG() {
   return (
     <div className="shadow-lg bg-bleu py-3">
-      <header className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl ">
+      <header className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10">
         <nav className=" flex justify-between items-center ">
           <div>
             <Link href="/">

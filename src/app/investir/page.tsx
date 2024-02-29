@@ -16,7 +16,7 @@ export default function InvestirEpargner() {
 
       <main className=" ">
         <div className=" h-[25rem]  bg-[url('/img/invest0.jpg')] bg-cover flex  flex-col justify-center">
-          <div className="text-white mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl text-left ">
+          <div className="text-white mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 text-left ">
             <h2 className=" text-[5rem] font-PBold leading-none">
               Investissez <br />
               Epargnez
@@ -45,7 +45,7 @@ export default function InvestirEpargner() {
           </p>
         </div>
 
-        <section className="flex gap-8 mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl flex-wrap justify-center items-center mt-12 mb-20">
+        <section className="flex gap-8 mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 flex-wrap justify-center items-center mt-12 mb-20">
           {ProductsItems.map((item, index) => (
             <ProductCard
               key={index}
@@ -57,9 +57,9 @@ export default function InvestirEpargner() {
           ))}
         </section>
 
-        <div className=" h-[1px] w-full bg-text mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl opacity-25"></div>
+        <div className=" h-[1px] w-full bg-text mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 opacity-25"></div>
 
-        <div className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl flex flex-col justify-center items-center gap-6 mt-5">
+        <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 flex flex-col justify-center items-center gap-6 mt-5">
           <div className="flex flex-col gap-6 text-center items-center">
             <h2 className=" text-4xl font-PBold">
               Besoin <br /> d&apos;assistance ?
@@ -75,7 +75,7 @@ export default function InvestirEpargner() {
             </div>
           </div>
         </div>
-        <div className=" h-[1px] w-full bg-text mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl opacity-25 my-14"></div>
+        <div className=" h-[1px] w-full bg-text mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 opacity-25 my-14"></div>
       </main>
 
       <Footer />

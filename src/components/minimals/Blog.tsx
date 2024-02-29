@@ -5,7 +5,7 @@ import { FaChevronDown } from "react-icons/fa";
 
 export default function Blog() {
   return (
-    <section className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl flex flex-col gap-8 mt-9">
+    <section className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 flex flex-col gap-8 mt-9">
       <h2 className=" text-bleu text-4xl font-black font-PBold text-center">
         Blog
       </h2>

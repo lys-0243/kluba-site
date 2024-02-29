@@ -5,7 +5,7 @@ import SponsorCard from "../Crads/SponsorCard";
 
 export default function Partnairs() {
   return (
-    <div className="mx-auto 2xl:max-w-screen-2xl xl:max-w-screen-2xl pt-6">
+    <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 pt-6">
       <p className=" text-center text-xl font-PBold text-bleu">
         Nos partenaires
       </p>
