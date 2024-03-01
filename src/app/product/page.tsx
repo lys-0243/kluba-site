@@ -8,22 +8,19 @@ import Link from "next/link";
 import Footer from "@/components/minimals/Footer";
 import { ProductsItems } from "@/components/constants";
 import ProductCard from "@/components/Crads/ProductCard";
+import InvestLayout from "./layaout";
 
 export default function InvestirEpargner() {
   return (
-    <>
-      <MenuBG />
-
+    <InvestLayout>
       <main className=" ">
-        <div className=" h-[25rem]  bg-[url('/img/invest0.jpg')] bg-cover flex  flex-col justify-center">
+        <div className=" lg:h-[25rem]  bg-[url('/img/invest0.jpg')] bg-cover flex  flex-col justify-center px-4 py-6">
           <div className="text-white mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 text-left ">
-            <h2 className=" text-[5rem] font-PBold leading-none">
+            <h2 className="text-[4rem] lg:text-[5rem] font-PBold leading-none">
               Investissez <br />
               Epargnez
             </h2>
-            <p className="font-PMedium w-1/2 mt-6">
-              Rejoignez le club en choisissant un produit de fast-food KWI{" "}
-              <br /> <br />
+            <p className="font-PMedium lg:w-1/2 mt-6">
               <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
                 exercitationem est accusantium, eius ipsa voluptatum voluptate,
@@ -34,18 +31,18 @@ export default function InvestirEpargner() {
           </div>
         </div>
 
-        <div className="text-center mt-12 flex flex-col items-center gap-4">
+        <div className="text-center mt-12 flex flex-col items-center gap-4 mx-4">
           <h2 className=" text-5xl font-PBold text-text">
-            Choisis le produit qui <br />
+            Choisis le produit qui <br className="hidden md:flex" />
             te convient le mieux
           </h2>
-          <p className=" font-PMedium w-1/3">
+          <p className=" font-PMedium md:w-1/3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
             doloremque deleniti quas minus doloribus sequi!
           </p>
         </div>
 
-        <section className="flex gap-8 mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 flex-wrap justify-center items-center mt-12 mb-20">
+        <section className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 flex flex-col  gap-7 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 justify-center items-center mt-16">
           {ProductsItems.map((item, index) => (
             <ProductCard
               key={index}
@@ -57,9 +54,9 @@ export default function InvestirEpargner() {
           ))}
         </section>
 
-        <div className=" h-[1px] w-full bg-text mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 opacity-25"></div>
+        <div className=" h-[1px] w-full bg-text mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 opacity-25 my-8"></div>
 
-        <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 flex flex-col justify-center items-center gap-6 mt-5">
+        <div className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 flex flex-col justify-center items-center gap-6">
           <div className="flex flex-col gap-6 text-center items-center">
             <h2 className=" text-4xl font-PBold">
               Besoin <br /> d&apos;assistance ?
@@ -75,10 +72,8 @@ export default function InvestirEpargner() {
             </div>
           </div>
         </div>
-        <div className=" h-[1px] w-full bg-text mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 opacity-25 my-14"></div>
+        <div className=" h-[1px] w-full bg-text mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 opacity-25 my-8"></div>
       </main>
-
-      <Footer />
-    </>
+    </InvestLayout>
   );
 }

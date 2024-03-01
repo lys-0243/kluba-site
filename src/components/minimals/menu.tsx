@@ -11,7 +11,7 @@ import { Fragment } from "react";
 export default function MenuItems() {
   return (
     <div className="shadow-lg">
-      <header className="hidden lg:grid mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 md:px-10 sm:shadow-lg py-4">
+      <header className="hidden lg:grid mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 py-4">
         <nav className=" flex justify-between items-center ">
           <div>
             <Link href="/">

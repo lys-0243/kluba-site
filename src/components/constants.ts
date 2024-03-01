@@ -69,32 +69,32 @@ export const ProductsItems = [
     {
       title: "Bot de trading automatique",
       imageUrl:"/img/product/bot.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum. Consequuntur omnis debitis similique natus placeat non eum illo voluptatibus! Alias consequuntur eaque vitae nesciunt sequi.",
-      hrefLink: ""
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum.",
+      hrefLink: "/product/bot-trading-automatique"
     },
     {
       title: "Fast-food KWI",
       imageUrl:"/img/product/food.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum. Consequuntur omnis debitis similique natus placeat non eum illo voluptatibus! Alias consequuntur eaque vitae nesciunt sequi.",
-      hrefLink: ""
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum.",
+      hrefLink: "/product/fast-food-kwi"
     },
     {
       title: "Une vidéo corporate",
       imageUrl:"/img/product/video.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum. Consequuntur omnis debitis similique natus placeat non eum illo voluptatibus! Alias consequuntur eaque vitae nesciunt sequi.",
-      hrefLink: ""
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum.",
+      hrefLink: "/product/video-corporate-offerte"
     },
     {
       title: "Token Pay",
       imageUrl:"/img/product/token.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum. Consequuntur omnis debitis similique natus placeat non eum illo voluptatibus! Alias consequuntur eaque vitae nesciunt sequi.",
-      hrefLink: ""
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum.",
+      hrefLink: "/product/token-pay"
     },
     {
       title: "Levée des fonds",
       imageUrl:"/img/product/levee.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum. Consequuntur omnis debitis similique natus placeat non eum illo voluptatibus! Alias consequuntur eaque vitae nesciunt sequi.",
-      hrefLink: ""
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum.",
+      hrefLink: "/product/levee-fonds"
     },
   ];
 

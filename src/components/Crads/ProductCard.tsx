@@ -17,13 +17,13 @@ export default function ProductCard({
 }: Props) {
   return (
     <div className="text-center flex flex-col items-center gap-4">
-      <div className="bg-white rounded-xl shadow-2xl w-[30rem] p-5 group hover:bg-orange flex flex-col gap-4 items-center transition duration-200 hover:scale-105">
-        <div className=" h-[15rem]">
+      {/* <div className="bg-white rounded-xl shadow-2xl w-[30rem] p-5 group hover:bg-orange flex flex-col gap-4 items-center transition duration-200 hover:scale-105"> */}
+      <div className="bg-white rounded-xl shadow-2xl  p-5 group hover:bg-orange flex flex-col gap-4 items-center transition duration-200 hover:scale-105">
+        <div className=" h-[15rem] rounded-xl">
           <Image
             src={imageUrl}
             width={1920}
             height={1024}
-            style={{ objectFit: "contain" }}
             alt=""
             className=" w-full rounded-xl h-full object-cover"
           />
@@ -39,7 +39,7 @@ export default function ProductCard({
           {description}
         </p>
         <div className=" text-white bg-orange group-hover:bg-white group-hover:text-text w-max px-6 py-3 rounded-2xl flex justify-center items-center hover:scale-90 transition duration-200">
-          <Link href={""} className="font-PMedium tracking-wider text-xl">
+          <Link href={hrefLink} className="font-PMedium tracking-wider text-xl">
             Voir détails
           </Link>
         </div>

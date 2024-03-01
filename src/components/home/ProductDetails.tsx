@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
-export default function InvestDetails() {
+export default function ProductDetails() {
   return (
     <section className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 py-12">
       <div className="md:grid md:grid-cols-2 md:gap-4 mx-4 space-y-3">
