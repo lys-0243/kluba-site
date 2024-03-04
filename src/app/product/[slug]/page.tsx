@@ -328,11 +328,13 @@ export default function DetailsProduct({
                   <footer className="flex justify-between items-center mb-2">
                     <div className="flex items-center ">
                       <p className="inline-flex items-center mr-3 text-text font-PMedium">
-                        <img
-                          className="mr-2 w-6 h-6 rounded-full"
-                          style={{ objectFit: "cover" }}
+                        <Image
                           src="/img/kristen.jpg"
-                          alt="Michael Gough"
+                          width={1920}
+                          height={1024}
+                          alt=""
+                          style={{ objectFit: "cover" }}
+                          className="mr-2 w-6 h-6 rounded-full"
                         />
                         Michael Gough
                       </p>
@@ -351,11 +353,13 @@ export default function DetailsProduct({
                   <footer className="flex justify-between items-center mb-2">
                     <div className="flex items-center ">
                       <p className="inline-flex items-center mr-3 text-text font-PMedium">
-                        <img
-                          className="mr-2 w-6 h-6 rounded-full"
+                        <Image
+                          src="/img/profile-picture-3.jpg"
+                          width={1920}
+                          height={1024}
+                          alt=""
                           style={{ objectFit: "cover" }}
-                          src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
-                          alt="Michael Gough"
+                          className="mr-2 w-6 h-6 rounded-full"
                         />
                         John Doe
                       </p>
@@ -373,11 +377,13 @@ export default function DetailsProduct({
                   <footer className="flex justify-between items-center mb-2">
                     <div className="flex items-center ">
                       <p className="inline-flex items-center mr-3 text-text font-PMedium">
-                        <img
-                          className="mr-2 w-6 h-6 rounded-full"
+                        <Image
+                          src="/img/profile-picture-4.jpg"
+                          width={1920}
+                          height={1024}
+                          alt=""
                           style={{ objectFit: "cover" }}
-                          src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
-                          alt="Michael Gough"
+                          className="mr-2 w-6 h-6 rounded-full"
                         />
                         Helene Engels
                       </p>
