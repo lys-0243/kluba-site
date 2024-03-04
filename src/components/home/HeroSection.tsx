@@ -34,7 +34,7 @@ export default function HeroSection() {
             href={appRoutes.signUp}
             text={"rejoindre gratuitement le club"}
             animated={true}
-            color="orange"
+            color="bg-orange"
           />
         </div>
       </div>

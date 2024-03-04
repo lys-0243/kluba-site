@@ -36,14 +36,14 @@ export default function MenuItems() {
             ))}
           </div>
 
-          <div className=" text-white bg-orange px-6 py-3 rounded-2xl flex justify-center items-center">
-            <Link
-              href={appRoutes.signUp}
-              className=" uppercase font-PMedium tracking-wider text-sm"
-            >
+          <Link
+            href={appRoutes.signUp}
+            className="text-white bg-orange px-6 py-3 rounded-2xl flex justify-center items-center"
+          >
+            <p className=" uppercase font-PMedium tracking-wider text-sm">
               S&apos;inscrire
-            </Link>
-          </div>
+            </p>
+          </Link>
         </nav>
       </header>
 
@@ -94,14 +94,14 @@ export default function MenuItems() {
                 </Menu.Item>
 
                 <Menu.Item>
-                  <div className=" text-white bg-orange px-6 py-3 rounded-2xl flex justify-center items-center">
-                    <Link
-                      href={appRoutes.signUp}
-                      className=" uppercase font-PMedium tracking-wider text-sm"
-                    >
+                  <Link
+                    href={appRoutes.signUp}
+                    className=" text-white bg-orange px-6 py-3 rounded-2xl flex justify-center items-center"
+                  >
+                    <p className=" uppercase font-PMedium tracking-wider text-sm">
                       S&apos;inscrire
-                    </Link>
-                  </div>
+                    </p>
+                  </Link>
                 </Menu.Item>
               </div>
             </Menu.Items>

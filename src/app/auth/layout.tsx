@@ -21,7 +21,7 @@ export default function AuthLayout({
     children: React.ReactNode
   }) {
     return (
-      <section className="bg-[url('/img/login.jpg')] bg-cover min-h-screen p-2 relative">
+      <section className="bg-[url('/img/login.jpg')] bg-cover min-h-screen p-3 relative">
    
         {children}
       </section>

@@ -42,7 +42,7 @@ export default function InvestirEpargner() {
           </p>
         </div>
 
-        <section className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 flex flex-col  gap-7 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 justify-center items-center mt-16">
+        <section className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 flex flex-col  gap-7 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 justify-center items-center mt-16 px-5">
           {ProductsItems.map((item, index) => (
             <ProductCard
               key={index}

@@ -10,7 +10,7 @@ import { Fragment } from "react";
 export default function MenuBG() {
   return (
     <div className="shadow-lg bg-bleu">
-      <header className="hidden lg:grid mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 py-4 py-3">
+      <header className="hidden lg:grid mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 py-4">
         {/* <header className="mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10"> */}
         <nav className=" flex justify-between items-center ">
           <div>
@@ -36,14 +36,14 @@ export default function MenuBG() {
             ))}
           </div>
 
-          <div className=" text-white bg-orange px-6 py-3 rounded-2xl flex justify-center items-center">
-            <Link
-              href={appRoutes.signUp}
-              className=" uppercase font-PMedium tracking-wider text-sm"
-            >
+          <Link
+            href={appRoutes.signUp}
+            className=" text-white bg-orange px-6 py-3 rounded-2xl flex justify-center items-center"
+          >
+            <p className=" uppercase font-PMedium tracking-wider text-sm">
               S&apos;inscrire
-            </Link>
-          </div>
+            </p>
+          </Link>
         </nav>
       </header>
 
@@ -94,14 +94,14 @@ export default function MenuBG() {
                 </Menu.Item>
 
                 <Menu.Item>
-                  <div className=" text-white bg-orange px-6 py-3 rounded-2xl flex justify-center items-center">
-                    <Link
-                      href={appRoutes.signUp}
-                      className=" uppercase font-PMedium tracking-wider text-sm"
-                    >
+                  <Link
+                    href={appRoutes.signUp}
+                    className=" text-white bg-orange px-6 py-3 rounded-2xl flex justify-center items-center"
+                  >
+                    <p className=" uppercase font-PMedium tracking-wider text-sm">
                       S&apos;inscrire
-                    </Link>
-                  </div>
+                    </p>
+                  </Link>
                 </Menu.Item>
               </div>
             </Menu.Items>

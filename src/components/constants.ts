@@ -69,6 +69,7 @@ export const ProductsItems = [
     {
       title: "Bot de trading automatique",
       imageUrl:"/img/product/bot.jpg",
+      slug:"bot-trading-automatique",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum.",
       hrefLink: "/product/bot-trading-automatique"
     },
@@ -76,24 +77,28 @@ export const ProductsItems = [
       title: "Fast-food KWI",
       imageUrl:"/img/product/food.jpg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum.",
+      slug:"fast-food-kwi",
       hrefLink: "/product/fast-food-kwi"
     },
     {
       title: "Une vidéo corporate",
       imageUrl:"/img/product/video.jpg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum.",
+      slug:"video-corporate-offerte",
       hrefLink: "/product/video-corporate-offerte"
     },
     {
       title: "Token Pay",
       imageUrl:"/img/product/token.jpg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum.",
+      slug:"token-pay",
       hrefLink: "/product/token-pay"
     },
     {
       title: "Levée des fonds",
       imageUrl:"/img/product/levee.jpg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia accusamus temporibus alias earum.",
+      slug:"levee-fonds",
       hrefLink: "/product/levee-fonds"
     },
   ];
