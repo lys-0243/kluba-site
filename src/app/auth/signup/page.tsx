@@ -10,10 +10,8 @@ import SocialsLogin from "@/components/SocialsLogin";
 export default function SignUp() {
   return (
     <div className="">
-      {/* <div className="flex items-center justify-end gap-10 mr-24  min-h-screen"> */}
-      <div className="flex flex-col gap-4 justify-center sm:items-end sm:mr-14 lg:mr-20 sm:min-h-screen lg:flex lg:flex-row lg:items-center lg:justify-end">
+      <div className="flex flex-col gap-4 justify-center items-center sm:items-end sm:mr-14 lg:mr-20 sm:min-h-screen lg:flex lg:flex-row lg:items-center lg:justify-end">
         <div className="flex gap-5 flex-col justify-center items-center bg-white p-3 rounded-md bg-opacity-50 backdrop-blur-md sm:justify-end sm:items-end sm:bg-transparent sm:backdrop-blur-none lg:flex lg:items-start">
-          {/* <div className=" flex gap-5 flex-col"> */}
           <Link href={appRoutes.home} className="sm:hidden">
             <Image
               src="/img/logos/kaapital-logo.png"
@@ -32,11 +30,11 @@ export default function SignUp() {
               className=""
             />
           </Link>
-          <h2 className="text-2xl text-center lg:text-left lg:text-3xl font-PBold">
+          <h2 className="hidden sm:grid text-2xl text-center lg:text-left lg:text-3xl font-PBold">
             Mon espace <br className="hidden lg:grid" /> Club d&apos;affaires
           </h2>
 
-          <div className=" text-sm font-PMedium">
+          <div className="hidden sm:grid text-sm font-PMedium">
             <p className="flex items-center gap-2">
               <FaCheckCircle className=" text-orange" /> Rejoindre un ou
               plusieurs Clubs sur toute la RDC
