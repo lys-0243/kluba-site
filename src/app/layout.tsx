@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ToastContainer } from "react-toastify"
-import "react-toastify/dist/ReactToastify.css"
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import AuthSessionProvider from "@/components/AuthSessionProvider";
 
 export const metadata: Metadata = {
   title: "Kluba - Investir, devenir grand",
@@ -22,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-      <ToastContainer />
-        {children}
+        <AuthSessionProvider>
+          <ToastContainer />
+          {children}
+        </AuthSessionProvider>
       </body>
     </html>
   );

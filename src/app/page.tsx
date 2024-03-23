@@ -9,21 +9,19 @@ import Testimonies from "@/components/minimals/Testimonies";
 import Image from "next/image";
 import OnTopScroll from "@/components/minimals/OnTop";
 
-
 export default function Home() {
   return (
     <main>
       <HeroSection />
       <KlubaTime />
       <About />
-      <ProductDetails /> 
+      <ProductDetails />
       <Testimonies />
       <Blog />
       {/* <OnTopScroll /> */}
 
       <Partnairs />
       <Footer />
-
     </main>
   );
 }

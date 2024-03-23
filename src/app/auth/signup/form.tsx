@@ -7,6 +7,7 @@ import { RiLoader2Line } from "react-icons/ri";
 export default function Form() {
   const router = useRouter();
   const [loading, setLoading] = React.useState(false);
+  
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true)
@@ -14,7 +15,8 @@ export default function Form() {
     const pass1 = formData.get("password");
     const pass2 = formData.get("password2");
     if (pass1 != pass2) {
-      toast.warning("Mots de passe non identiques");
+      toast.error("Mots de passe non identiques");
+      setLoading(false)
     } else {
       const response = await fetch(`/api/auth/register`, {
         method: "POST",

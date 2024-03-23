@@ -1,14 +1,19 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { MenuLinks } from "../constants";
 import Image from "next/image";
 import { appRoutes } from "../utils/routes";
 import { IoMenu } from "react-icons/io5";
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
+import { useSession } from "next-auth/react";
 
 export default function MenuItems() {
+  const { data: session } = useSession();
+
+  console.log(session?.user?.email ? "Logged in" : "Logged out");
+
   return (
     <div className="shadow-lg">
       <header className="hidden lg:grid mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:px-10 py-4">
@@ -36,14 +41,26 @@ export default function MenuItems() {
             ))}
           </div>
 
-          <Link
-            href={appRoutes.signUp}
-            className="text-white bg-orange px-6 py-3 rounded-2xl flex justify-center items-center"
-          >
-            <p className=" uppercase font-PMedium tracking-wider text-sm">
-              S&apos;inscrire
-            </p>
-          </Link>
+          {!!session && (
+            <Link
+              href={appRoutes.dashboard}
+              className="text-white bg-orange px-6 py-3 rounded-2xl flex justify-center items-center"
+            >
+              <p className=" uppercase font-PMedium tracking-wider text-sm">
+                Dashboard
+              </p>
+            </Link>
+          )}
+          {!session && (
+            <Link
+              href={appRoutes.signIn}
+              className="text-white bg-orange px-6 py-3 rounded-2xl flex justify-center items-center"
+            >
+              <p className=" uppercase font-PMedium tracking-wider text-sm">
+                Se Connecter
+              </p>
+            </Link>
+          )}
         </nav>
       </header>
 

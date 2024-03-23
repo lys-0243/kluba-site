@@ -7,6 +7,8 @@ import DefaultBtn from "@/components/minimals/DefaultBtn";
 import Link from "next/link";
 import { FaDownload } from "react-icons/fa6";
 import { RiLoader2Line } from "react-icons/ri";
+import { useSession } from "next-auth/react";
+import { appRoutes } from "@/components/utils/routes";
 
 export default function DetailsProduct({
   params,
@@ -17,6 +19,7 @@ export default function DetailsProduct({
   const [activeTab, setActiveTab] = React.useState<string>("desc");
   const [styleDesc, setStyleDesc] = React.useState({});
   const [styleComment, setStyleComment] = React.useState({ display: "none" });
+  const { data: session } = useSession();
 
   var object = ProductsItems.find((obj) => {
     return obj.slug === params.slug;
@@ -145,7 +148,11 @@ export default function DetailsProduct({
             <div className="flex flex-col sm:flex sm:flex-row sm:justify-start lg:justify-between items-center">
               <div className="w-full sm:w-max hover:border-2 p-2 rounded-3xl hover:border-orange transition duration-200">
                 <Link
-                  href={""}
+                  href={
+                    session?.user?.email
+                      ? appRoutes.dashboard
+                      : appRoutes.signIn
+                  }
                   className={`text-white px-6 py-3 bg-bleu uppercase font-PMedium tracking-wider text-sm rounded-2xl flex justify-center md:w-max`}
                 >
                   Investir
