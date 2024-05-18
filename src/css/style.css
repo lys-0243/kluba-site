@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @layer base {
     body {
-        @apply relative z-1 bg-whiten font-satoshi text-base font-normal text-body;
+        @apply relative  bg-white  text-base font-normal ;
     }
 }
 
@@ -43,16 +43,16 @@
     @apply border-primary bg-primary;
 }
 
-.apexcharts-legend-text {
+/* .apexcharts-legend-text {
     @apply !text-body dark:!text-bodydark;
-}
+} */
 
-.apexcharts-text {
+/* .apexcharts-text {
     @apply !fill-body dark:!fill-bodydark;
-}
+} */
 
 .apexcharts-xcrosshairs {
-    @apply !fill-stroke dark:!fill-strokedark;
+    /* @apply !fill-stroke dark:!fill-strokedark; */
 }
 
 .apexcharts-gridline {
